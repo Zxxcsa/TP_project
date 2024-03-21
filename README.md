@@ -6,4 +6,4 @@
 
 ## Проект "Банковская система"
 
-![alt text](gitlab.akhcheck.ru/ivan.matalytskii/mipt-tp-2024-project/-/blob/dev/1.jpg)
+![Image alt](gitlab.akhcheck.ru/ivan.matalytskii/mipt-tp-2024-project/-/blob/dev/1.jpg)
