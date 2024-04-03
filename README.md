@@ -3,3 +3,4 @@
 ## Проект "Банковская система"
 
 ![image info](1.jpg)
+![image info](2.jpg)
