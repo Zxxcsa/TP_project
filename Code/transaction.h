@@ -1,10 +1,13 @@
+#pragma once
+#include "account.h"
 #include <iostream>
 
 class Transaction {
-  public:
-    int type;
-    Transaction(double x1, size_t x2, size_t x3){
-      
-    }
-    
+ public:
+  size_t num;
+  virtual ~Transaction() {
+  }
+  virtual void Execute() const = 0;
+  
+  virtual void Cancel() const = 0;
 };
