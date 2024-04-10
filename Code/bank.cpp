@@ -31,34 +31,27 @@ void Bank::RemoveAccount(size_t num) {
 
 void Bank::AddClient() {
   std::cout << "Введите логин: ";
-  std::string login;
-  std::cin >> login;
+  builder->AddLogin();
   std::cout << "Введите пароль: ";
-  std::string pass;
-  std::cin >> pass;
+  builder->AddPassword();
   std::cout << "Введите имя: ";
-  std::string name;
-  std::cin >> name;
+  builder->AddName();
   std::cout << "Введите фамилию: ";
-  std::string surname;
-  std::cin >> surname;
+  builder->AddSurname();
   std::cout << "Хотите ввести адрес[Y/n]: ";
   char c;
-  std::cin >> c;
-  std::string adress = "";
   if (c == 'Y') {
     std::cout << "Введите адресс: ";
-    std::cin >> adress;
+    builder->AddAdress();
   }
   std::cout << "Хотите ввести номер паспорта[Y/n]: ";
   std::cin >> c;
-  size_t pasport = 0;
   if (c == 'Y') {
     std::cout << "Введите номер паспорта: ";
-    std::cin >> pasport;
+    builder->AddPasport();
   }
-  Client client{clientnum, name, surname, adress, pasport, login, pass};
-  clientlist.push_back(client);
+  builder->AddId(clientnum);
+  clientlist.push_back(builder->GetClient());
   ++clientnum;
 }
 

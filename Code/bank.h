@@ -7,8 +7,10 @@
 #include "withdrawing.h"
 #include "replenish.h"
 #include "transfer.h"
+#include "clientbuilder.h"
 #include <iostream> 
-#include <vector> 
+#include <vector>
+
 
 class Bank {
  public:
@@ -19,6 +21,7 @@ class Bank {
   size_t clientnum = 0;
   size_t accountnum = 0;
   size_t transactionnum = 0;
+  ClientBuilder *builder;
   void AddAccount(size_t id, size_t type);
   void RemoveAccount(size_t num);
   void AddClient();
