@@ -3,6 +3,8 @@
 ClientBuilder::ClientBuilder() = default;
 void ClientBuilder::AddLogin() {
   std::cin >> client.login;
+  // client.adress = "";
+  // client.pasport = 0;
 }
 void ClientBuilder::AddPassword() {
   std::cin >> client.password;

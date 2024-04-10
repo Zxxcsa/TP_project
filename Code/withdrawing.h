@@ -8,7 +8,7 @@ class Withdrawing : public Transaction { //снятие денег
  public:
   double amount;
   Account* acc;
-  Withdrawing(double x1, Account* x2);
-  void Execute() const override;
-  void Cancel() const override;
+  Withdrawing(double x1, Account* x2, size_t n);
+  void Execute();
+  void Cancel();
 };

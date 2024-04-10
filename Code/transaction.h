@@ -1,13 +1,13 @@
 #pragma once
 #include "account.h"
 #include <iostream>
+#include <vector>
 
 class Transaction {
  public:
   size_t num;
-  virtual ~Transaction() {
-  }
-  virtual void Execute() const = 0;
+
+  void Execute();
   
-  virtual void Cancel() const = 0;
+  void Cancel();
 };

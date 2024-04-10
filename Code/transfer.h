@@ -9,7 +9,7 @@ class Transfer : public Transaction {
   double amount;
   Account* inp; //кому
   Account* out; //кто
-  Transfer(double x1, Account* x2, Account* x3);
-  void Execute() const override;
-  void Cancel() const override;
+  Transfer(double x1, Account* x2, Account* x3, size_t n);
+  void Execute();
+  void Cancel();
 };
