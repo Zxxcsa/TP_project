@@ -2,7 +2,7 @@
 #include "account.h"
 #include <iostream>
 
-class Deposit : public Account {
+class Deposit : public Account {//депозит
  public:
   std::string time;
   double percent;

@@ -2,7 +2,7 @@
 #include "account.h"
 #include <iostream>
 
-class Credit : public Account {
+class Credit : public Account {//кредит
   public:
     double limit;
     double commision;

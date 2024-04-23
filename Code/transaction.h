@@ -3,11 +3,10 @@
 #include <iostream>
 #include <vector>
 
-class Transaction {
+class Transaction {//транзакция
  public:
   size_t num;
 
-  void Execute();
-  
-  void Cancel();
+  void Execute();//выполнить
+  void Cancel();//отменить
 };

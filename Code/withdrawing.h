@@ -9,6 +9,6 @@ class Withdrawing : public Transaction { //снятие денег
   double amount;
   Account* acc;
   Withdrawing(double x1, Account* x2, size_t n);
-  void Execute();
-  void Cancel();
+  void Execute();//выполнить
+  void Cancel();//отменить
 };

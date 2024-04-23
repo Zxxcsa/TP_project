@@ -8,6 +8,7 @@
 #include "replenish.h"
 #include "transfer.h"
 #include "clientbuilder.h"
+#include "interfaceaddclient.h"
 #include <iostream> 
 #include <vector>
 
@@ -26,13 +27,13 @@ class Bank {
   
   Bank() = default;
 
-  Account* FindAccount(size_t num);
-  Transaction* FindTransaction(size_t num);
-  void AddAccount(size_t id, size_t type);
-  void RemoveAccount(size_t num);
-  void AddClient();
-  void RemoveClient(size_t id);
-  void Transact(size_t type, double amount, size_t num);
-  void AntiTransact(size_t num);
-  Client PassCheck(std::string login, std::string password);
+  Account* FindAccount(size_t num);//найти аккаунт
+  Transaction* FindTransaction(size_t num);//найти транзакцию
+  void AddAccount(size_t id, size_t type);//добавить счет
+  void RemoveAccount(size_t num);//удалить счет
+  void AddClient();//добавить клиент
+  void RemoveClient(size_t id);//удалить клиента
+  void Transact(size_t type, double amount, size_t num);//транзакция
+  void AntiTransact(size_t num);//отмена транзакции
+  Client PassCheck(std::string login, std::string password);//проверка допуска клиента
 }; 
