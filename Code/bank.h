@@ -13,7 +13,7 @@
 #include <vector>
 
 
-class Bank {
+class Bank { // банк
  private:
   size_t clientnum = 0;
   size_t accountnum = 0;

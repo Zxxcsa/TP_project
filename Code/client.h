@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-class Client {
+class Client {// клиент
 public:
   size_t id;
   std::string name;
