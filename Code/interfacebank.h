@@ -1,4 +1,4 @@
-#include "bank.h"
+#include "facade.h"
 
 class InterfaceBank {//интерфейс банка
 public:
